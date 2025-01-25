@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QIUTY Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="https://i.ibb.co/mJpkfkM/image.png" alt="QIUTY" class="artist-image">
+            <h1 style="margin-top: 2rem;">QIUTY Music</h1>
+        </header>
+
+        <div class="track-list">
+            <!-- Thanh Xuân -->
+            <div class="track-card" data-track="track1">
+                <div class="track-info">
+                    <img src="https://i.ibb.co/8KLVbnT/image.png" alt="Thanh Xuân" class="track-thumbnail">
+                    <div>
+                        <h3>Thanh Xuân</h3>
+                        <p style="color: #b3b3b3;">QIUTY</p>
+                    </div>
+                </div>
+                <i class="fas fa-play"></i>
+            </div>
+
+            <!-- 22h03' -->
+            <div class="track-card" data-track="track2">
+                <div class="track-info">
+                    <img src="https://i.ibb.co/sqHndFN/image.png" alt="22h03'" class="track-thumbnail">
+                    <div>
+                        <h3>22h03'</h3>
+                        <p style="color: #b3b3b3;">QIUTY</p>
+                    </div>
+                </div>
+                <i class="fas fa-play"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Player Template -->
+    <template id="player-template">
+        <div class="custom-player">
+            <div class="player-info">
+                <img src="" alt="" class="player-artwork">
+                <h2 class="player-title"></h2>
+                <p class="player-artist">QIUTY</p>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+            <div class="time-info">
+                <span class="current-time">0:00</span>
+                <span class="duration">0:00</span>
+            </div>
+            <div class="player-controls">
+                <button class="control-btn previous-btn">
+                    <i class="fas fa-step-backward"></i>
+                </button>
+                <button class="control-btn play-btn">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button class="control-btn next-btn">
+                    <i class="fas fa-step-forward"></i>
+                </button>
+                <div class="volume-control">
+                    <i class="fas fa-volume-up volume-icon"></i>
+                    <div class="volume-slider-container">
+                        <div class="volume-slider">
+                            <div class="volume-progress"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <footer class="footer">
+        <p>Created by Tran Khoi</p>
+        <div class="social-links">
+            <a href="https://github.com/khoi172" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://facebook.com/@ronaldoGoatskibidi" target="_blank" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://tiktok.com/@trankhoi1325" target="_blank" title="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- SoundCloud API -->
+    <script src="https://w.soundcloud.com/player/api.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
